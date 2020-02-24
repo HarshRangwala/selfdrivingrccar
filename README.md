@@ -26,7 +26,7 @@ The processing unit handles following tasks:
 Using the input video data to train convolutional neural network and predict control output (i.e. steer)
 Detect objects and calculate distance.
 
-<b>Control unit<b>
+<b>Control unit</b>
 The car is controlled using raspberry pi. First the input is sent manually from pc (this trains the neural network). Then, the predicted input from neural network is used to control the car autonomously.
 
 <b>Neural Network</b>
@@ -49,3 +49,6 @@ python RaspberryPi/control.py
 ```
 python Computer/manual_TRYwithnpz.py
 ```
+<error> Every time I run the above files I get this error Is there any way <br> to solve this?? </error>
+<i>--------ERROR--------</i>
+ConnectionError: HTTPConnectionPool(host='192.168.0.31', port=5000): Max retries exceeded with url: /messages?data=x (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D456A07E08>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond'))
